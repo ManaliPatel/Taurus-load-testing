@@ -1,5 +1,5 @@
 
-##To run Simple Taurus Test without BlazeMeter account:
+## To run Simple Taurus Test without BlazeMeter account:
 - Go to SimpleTaurusTest dir
 - run bzt 1-simpliest.yml
 - to see results in blazeMeter - add following to reporting section in your yml file.
@@ -11,7 +11,7 @@
   project: Taurus test project
 ```
 
-##To run Simple Taurus Test with Blzemeter account:
+## To run Simple Taurus Test with Blzemeter account:
 
 ```
 export BLAZEMETERAPIKEYS = id:key
