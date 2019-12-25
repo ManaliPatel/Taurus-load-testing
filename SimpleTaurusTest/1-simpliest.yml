@@ -1,0 +1,32 @@
+
+scenarios:
+  basic:
+    requests:
+      - http://blazedemo.com/
+
+execution:
+  - concurrency: 10
+    hold-for: 1m
+    ramp-up: 5s
+    scenario: basic
+
+settings:
+  artifacts-dir: TaurusResult
+
+reporting:
+- module: final-stats
+  summary: true
+  test-duration: true
+  dump-xml: TaurusResult/blazeMeterResult.xml
+
+modules:
+  console:
+    disable: true 
+  cloud:
+    token: '${BLAZEMETERAPIKEYS}'
+    public-report: true
+    test: manaliTest
+    project: learning-taurus-blaze
+    browser-open: start
+    check-interval: 10s
+    timeout: 10s
