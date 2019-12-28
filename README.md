@@ -17,3 +17,9 @@
 export BLAZEMETERAPIKEYS = id:key
 bzt -o settings.env.BLAZEMETERAPIKEYS=$BLAZEMETERAPIKEYS 1-simpliest.yml -cloud
 ```
+
+## using fake api
+
+```
+bzt apiTest/scenario.yml apiTest/execution.yml
+```

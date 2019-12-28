@@ -1,0 +1,11 @@
+modules:
+  console:
+    disable: true 
+  cloud:
+    token: '${BLAZEMETERAPIKEYS}'
+    public-report: true
+    test: manaliTest
+    project: learning-taurus-blaze
+    browser-open: start
+    check-interval: 10s
+    timeout: 10s

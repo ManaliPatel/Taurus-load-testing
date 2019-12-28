@@ -1,0 +1,14 @@
+execution:
+  - concurrency: 1
+    hold-for: 5s
+    ramp-up: 1s
+    scenario: basic
+
+settings:
+  artifacts-dir: TaurusResult
+
+reporting:
+- module: final-stats
+  summary: true
+  test-duration: true
+  dump-xml: TaurusResult/blazeMeterResult.xml

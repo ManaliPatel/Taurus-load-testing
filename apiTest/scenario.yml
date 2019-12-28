@@ -1,0 +1,18 @@
+scenarios:
+  basic:
+    requests:
+    - url: https://jsonplaceholder.typicode.com/posts
+      method: GET
+      assert-jsonpath:
+      - jsonpath: $[1].id
+        validate: true
+        expected-value: 2
+      extract-jsonpath:
+        id: $.[1].id
+
+    - url: https://jsonplaceholder.typicode.com/posts/${id}
+      method: GET
+      assert-jsonpath:
+      - jsonpath: $title
+        validate: true
+        expected-value: "qui est esse"
