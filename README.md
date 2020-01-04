@@ -15,7 +15,7 @@
 
 ```
 export BLAZEMETERAPIKEYS = id:key
-bzt -o settings.env.BLAZEMETERAPIKEYS=$BLAZEMETERAPIKEYS 1-simpliest.yml -cloud
+bzt -o settings.env.BLAZEMETERAPIKEYS=$BLAZEMETERAPIKEYS SimpleTaurusTest/test.yml -cloud
 ```
 
 ## using fake api
