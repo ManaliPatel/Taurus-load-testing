@@ -1,7 +1,7 @@
 
 ## To run Simple Taurus Test without BlazeMeter account:
 - Go to SimpleTaurusTest dir
-- run bzt 1-simpliest.yml
+- run ```bzt 1-simpliest.yml```
 - to see results in blazeMeter - add following to reporting section in your yml file.
 
 ```
@@ -23,3 +23,11 @@ bzt -o settings.env.BLAZEMETERAPIKEYS=$BLAZEMETERAPIKEYS 1-simpliest.yml -cloud
 ```
 bzt apiTest/scenario.yml apiTest/execution.yml
 ```
+
+## using docker-compose
+
+```
+docker-compose run fakeApiTest
+docker-compose run simpleTest
+```
+

@@ -1,0 +1,16 @@
+version: '3.3'
+services: 
+  simpleTest:
+    image: blazemeter/taurus
+    volumes:
+      - "$PWD/SimpleTaurusTest:/bzt-configs"
+    command:
+      - /bzt-configs/test.yml
+  fakeApiTest:
+    image: blazemeter/taurus
+    volumes:
+      - "$PWD/apiTest:/bzt-configs"
+    command:
+      - /bzt-configs/execution.yml 
+      - /bzt-configs/scenario.yml
+

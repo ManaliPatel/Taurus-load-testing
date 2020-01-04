@@ -1,3 +1,5 @@
 TaurusResult/*
 .bzt-rc
 jmeter.log
+apiTest/TaurusResult/*
+SimpleTaurusTest/TaurusResult/*

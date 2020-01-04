@@ -13,6 +13,6 @@ scenarios:
     - url: https://jsonplaceholder.typicode.com/posts/${id}
       method: GET
       assert-jsonpath:
-      - jsonpath: $title
+      - jsonpath: $.title
         validate: true
         expected-value: "qui est esse"
