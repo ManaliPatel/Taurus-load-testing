@@ -6,6 +6,7 @@ services:
       - "$PWD/SimpleTaurusTest:/bzt-configs"
     command:
       - /bzt-configs/test.yml
+      - -report
   fakeApiTest:
     image: blazemeter/taurus
     volumes:

@@ -27,6 +27,7 @@ modules:
     public-report: true
     test: manaliTest
     project: learning-taurus-blaze
-    browser-open: start
+    browser-open: none
     check-interval: 10s
     timeout: 10s
+    summary: true

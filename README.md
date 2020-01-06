@@ -28,7 +28,7 @@ bzt apiTest/scenario.yml apiTest/execution.yml
 
 ```
 docker-compose run fakeApiTest
-docker-compose run simpleTest
+docker-compose run simpleTest  //runs with -report flag which shows results in blazemeter
 ```
 
 ## using docker run
