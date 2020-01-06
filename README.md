@@ -31,3 +31,8 @@ docker-compose run fakeApiTest
 docker-compose run simpleTest
 ```
 
+## using docker run
+
+```
+docker run -it --rm -v $(pwd):/bzt-configs blazemeter/taurus -o settings.env.BLAZEMETERAPIKEYS=$BLAZEMETERAPIKEYS /bzt-configs/SimpleTaurusTest/test.yml -cloud
+```
