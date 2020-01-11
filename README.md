@@ -1,5 +1,5 @@
 
-# taurus
+# Taurus-load-testing
 
 Contains examples of how to run taurus test along with Blazemeter and docker/docker-compose.
 
