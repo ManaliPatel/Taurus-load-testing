@@ -38,3 +38,10 @@ docker run -it --rm -v $(pwd):/bzt-configs blazemeter/taurus -o settings.env.BLA
 
 OR use  "-o modules.blazemeter.token=..." option
 ```
+
+## using custom dockerfile
+
+```
+docker build -t test .
+docker run --env BLAZEMETERAPIKEYS -it test
+```

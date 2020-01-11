@@ -1,0 +1,3 @@
+export BLAZEMETERAPIKEYS=$BLAZEMETERAPIKEYS
+echo $BLAZEMETERAPIKEYS
+bzt -o settings.env.BLAZEMETERAPIKEYS=$BLAZEMETERAPIKEYS /scripts/SimpleTaurusTest/test.yml -cloud
