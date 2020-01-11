@@ -1,7 +1,7 @@
 
 # Taurus-load-testing
 
-Contains examples of how to run taurus test along with Blazemeter and docker/docker-compose.
+Contains examples of taurus test along with Blazemeter and docker/docker-compose.
 
 ## Simple Taurus Test without BlazeMeter account:
 - Go to SimpleTaurusTest dir
