@@ -35,4 +35,6 @@ docker-compose run simpleTest  //runs with -report flag which shows results in b
 
 ```
 docker run -it --rm -v $(pwd):/bzt-configs blazemeter/taurus -o settings.env.BLAZEMETERAPIKEYS=$BLAZEMETERAPIKEYS /bzt-configs/SimpleTaurusTest/test.yml -cloud
+
+OR use  "-o modules.blazemeter.token=..." option
 ```
